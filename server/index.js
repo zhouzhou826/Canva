@@ -9,4 +9,4 @@ const getTournament = (teamsPerMatch, numberOfTeams) => tournamentManager.create
 
 const tournamentController = new TournamentController(tournamentManager, getTournament);
 const server = new TournamentApp(staticPath, getDelay, tournamentController);
-server.init(8765);
+server.init(process.env.PORT || 8765);
