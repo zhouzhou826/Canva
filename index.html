@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link rel="stylesheet" href="./client/styles.css">
+    <script type="text/javascript" src="./client/class/team.js"></script>
+    <script type="text/javascript" src="./client/class/match.js"></script>
+    <script type="text/javascript" src="./client/class/tournament.js"></script>
+    <script type="text/javascript" src="./client/client.js"></script>
+    <title>Knockout Tournament</title>
+  </head>
+  <body>
+
+    <!-- For tests to pass, the IDs of the elements below MUST NOT change. -->
+    <input id="teamsPerMatch" class="teamsPerMatch_c" placeholder="Teams per match" type="number" min="2"/>
+    <input id="numberOfTeams" class="numberOfTeams_c" placeholder="Number of teams" type="number" min="4"/>
+    <button id="start" class="start_c" >Start</button><br><br>
+    <div id="progressContainer" class="progressContainer_c"><code>
+      <div id="winnerContainer" class="winnerContainer_c"><span id="winner" class="winner_c"></span> is the Winner.</div>
+      <div id="progress" class="progress_c"></div>
+      <div id="error" class="error_c"></div>
+    </code></div>
+    <!-- Tracing the execution -->
+    <div id="tracer" class="tracer_c"><pre><code id="trace" class="trace_c"></code></pre></div>
+
+    <!-- two more executions to test if parallel tournaments could be played -->
+
+    <br><br>
+    <input id="teamsPerMatch1" class="teamsPerMatch_c" placeholder="Teams per match" type="number" min="2"/>
+    <input id="numberOfTeams1" class="numberOfTeams_c" placeholder="Number of teams" type="number" min="4"/>
+    <button id="start1" class="start_c" >Start</button><br><br>
+    <div id="progressContainer1" class="progressContainer_c"><code>
+      <div id="winnerContainer1" class="winnerContainer_c"><span id="winner1" class="winner_c"></span> is the Winner.</div>
+      <div id="progress1" class="progress_c"></div>
+      <div id="error1" class="error_c"></div>
+    </code></div>
+    <!-- Tracing the execution -->
+    <div id="tracer1" class="tracer_c"><pre><code id="trace1" class="trace_c"></code></pre></div>
+
+    <br><br>
+    <input id="teamsPerMatch2" class="teamsPerMatch_c" placeholder="Teams per match" type="number" min="2"/>
+    <input id="numberOfTeams2" class="numberOfTeams_c" placeholder="Number of teams" type="number" min="4"/>
+    <button id="start2" class="start_c" >Start</button><br><br>
+    <div id="progressContainer2" class="progressContainer_c"><code>
+      <div id="winnerContainer2" class="winnerContainer_c"><span id="winner2" class="winner_c"></span> is the Winner.</div>
+      <div id="progress2" class="progress_c"></div>
+      <div id="error2" class="error_c"></div>
+    </code></div>
+    <!-- Tracing the execution -->
+    <div id="tracer2" class="tracer_c"><pre><code id="trace2" class="trace_c"></code></pre></div>
+
+  </body>
+</html>

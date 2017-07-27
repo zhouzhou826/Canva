@@ -1,0 +1,12 @@
+/*
+  Minimal CSS, as asked
+*/
+
+#body { padding:1em 2em }
+.progressContainer_c { padding: 1em; background: #f5f5f5 }
+.winnerContainer_c { display: none }
+.progress_c span { display: inline-block }
+.error_c { color: red }
+
+/* remove display:none to see the tracer */
+.tracer_c { display: none; margin-top:2em; padding: 0 0.5em; border:2px solid gray; border-radius: 0.5em; height:10em; overflow-y: scroll }
