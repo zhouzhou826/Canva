@@ -1,3 +1,9 @@
+## View Demo
+
+https://amarshcanva.herokuapp.com/
+
+
+
 # Knockout Tournament
 
 The goal of this task is to simulate a single-elimination knockout tournament in the browser, determining the winner as quickly as possible.
