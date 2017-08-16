@@ -1,6 +1,6 @@
 ## Coding test results - REJECTED
 
-**I am leaving this feedback here so that anybody appearing for the test should know Canva's marking standards. My overall guess of the assessment was that the accessor was asked to fail the assessment whichever way possible. I would be delighted ot hear your comments on my code on amarsh.anand@gmail.com **
+**I am leaving this feedback here so that anybody appearing for the test should know Canva's marking standards. My overall guess of the assessment was that the accessor was asked to fail the assessment whichever way possible. I would be delighted ot hear your comments on my code on amarsh.anand@gmail.com**
 
 Hi Amarsh,
 
@@ -64,7 +64,7 @@ Testability:
 - The eventing does not make it easier
 > Emiting events is the best way to notify UI of any changes in the underlying model. Entire Angular library is written around it. I repeat - Test cases are written to test code, not the other way round. 
 
-**Parting notes:  Yes the code has flaws, but given that there was a 5hr window in which I had coded it. There are a lot more great things about the code, if you hadn't looked at it from the viewpoint of critisicing it. The code is good enough to invite me for a second round of interview at the least **
+**Parting notes:  Yes the code has flaws, but given that there was a 5hr window in which I had coded it. There are a lot more great things about the code, if you hadn't looked at it from the viewpoint of critisicing it. The code is good enough to invite me for a second round of interview at the least**
 
 ## View Demo
 
