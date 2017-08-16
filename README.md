@@ -12,14 +12,12 @@ Correctness:
 - Errors are shown, but only the HTTP error, not the message inside the errored response
 - Server errors are not caught/shown at all 
 
-<div style='background:lightgrey'>
-A sample error looks like:
- 
-`Error: Could not play this Tournament : FATAL: Couldnt post /tournament : Bad Request`
-
-This is sufficient to display on the UI. I dont think display stack trace will be neat.
-</div>
-
+> A sample error looks like:
+>  
+> `Error: Could not play this Tournament : FATAL: Couldnt post /tournament : Bad Request`
+> 
+> This is sufficient to display on the UI. I dont think display stack trace will be neat.
+> 
 0 UI is strange at best with three rows
 
 Performance:
