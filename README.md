@@ -1,6 +1,6 @@
 ## Coding test results - REJECTED
 
-**I am leaving this feedback here so that anybody appearing for the test should know their marking standards.**
+**I am leaving this feedback here so that anybody appearing for the test should know Canva's marking standards. My overall guess of the assessment was that the accessor was asked to fail the assessment whichever way possible. I would be delighted ot hear your comments on my code on amarsh.anand@gmail.com **
 
 Hi Amarsh,
 
@@ -18,30 +18,53 @@ Correctness:
 > 
 > This is sufficient to display on the UI. I dont think display stack trace will be neat.
 > 
+
 0 UI is strange at best with three rows
 
+> The specs clearly state to keep the UI simple. I have simple copied what was being given in the spec. Having 3 rows was just an addition from my side, to show how concurrent operations can be carried on without affecting the responsiveness of the UI. It tells me that you have little undertanding of multi-process simulation and the concurrency issues that may arise from it.
+
 Performance:
-+ Teams are cached 0 Tracing into a DOM element with .innerHTML
++ Teams are cached
+0 Tracing into a DOM element with .innerHTML
+
+> The spec clearly asks not to use jQuery etc, but pure JS. Also, tracing was not a part of the spec ... it was only there to demonstrate how I think, and was hidden on purpose in the final submission.
+
 - Main thread blocks when using a big number until some calculation is done
+
+> No it doesnt. Run it in parallel, and you would see that all three simulations are running in parallel. Yes, the code blocks at one stage for a round of the torunament, which I have mentioned in my submission, could be mine or server's fault. In 5 hrs, this is all I could achieve, and its a lot.
+
 - Large number brings up the INSUFFICIENT_RESOURCES error
+
+> Yes, because browsers, much like any other software, gets limited resources. And it cries when you ask for more ;)
 
 Code Clarity/Culture:
 + Well commented
 + Tracing is a a nice idea
 - No promise chaining used ("aTeam.setTeam().then(()=>resolve(aTeam)).catch((err)=>reject(err));")
+
+> What!! There is only one Promise in this statement! I have used chaining in line 53 on the same file:
+>  `Promise.all(matchArray.map((match) => match.run()))
+             .then((winningTeams) => {`
+
 - Code structure is a bit confusing - DOM management with custom ID's etc. is almost unreadable
+
+> Its more readbale than your feedback. Read with an attitude of understanding, and not criticising
 
 Architecture:
 + Uses classes
 + Uses Promises
 - No UI entity class, even though UI is reused (three rows)
 
+> The specs prohibit using any UI framework. Also, two additional rows were created only to show you the simulation.  
+
 Testability:
 + There is some DI
 - The DOM code is almost impossible to test
+> Learn to write better test cases. Test cases are written to test code, not the other way round.
 - The eventing does not make it easier
+> Emiting events is the best way to notify UI of any changes in the underlying model. Entire Angular library is written around it. I repeat - Test cases are written to test code, not the other way round. 
 
-
+**Parting notes:  Yes the code has flaws, but given that there was a 5hr window in which I had coded it. There are a lot more great things about the code, if you hadn't looked at it from the viewpoint of critisicing it. The code is good enough to invite me for a second round of interview at the least **
 
 ## View Demo
 
