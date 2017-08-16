@@ -1,3 +1,50 @@
+## Coding test results - REJECTED
+
+**I am leaving this feedback here so that anybody appearing for the test should know their marking standards.**
+
+Hi Amarsh,
+
+Thank you for your time and interest in the opportunity with Canva.
+ 
+After careful review of your application, I wish to advise that unfortunately we will not be progressing further with your profile, the following feedback was provided:
+
+Correctness:
+- Errors are shown, but only the HTTP error, not the message inside the errored response
+- Server errors are not caught/shown at all 
+
+<div style='background:lightgrey'>
+A sample error looks like:
+ 
+`Error: Could not play this Tournament : FATAL: Couldnt post /tournament : Bad Request`
+
+This is sufficient to display on the UI. I dont think display stack trace will be neat.
+</div>
+
+0 UI is strange at best with three rows
+
+Performance:
++ Teams are cached 0 Tracing into a DOM element with .innerHTML
+- Main thread blocks when using a big number until some calculation is done
+- Large number brings up the INSUFFICIENT_RESOURCES error
+
+Code Clarity/Culture:
++ Well commented
++ Tracing is a a nice idea
+- No promise chaining used ("aTeam.setTeam().then(()=>resolve(aTeam)).catch((err)=>reject(err));")
+- Code structure is a bit confusing - DOM management with custom ID's etc. is almost unreadable
+
+Architecture:
++ Uses classes
++ Uses Promises
+- No UI entity class, even though UI is reused (three rows)
+
+Testability:
++ There is some DI
+- The DOM code is almost impossible to test
+- The eventing does not make it easier
+
+
+
 ## View Demo
 
 https://amarshcanva.herokuapp.com/
